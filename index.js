@@ -1,6 +1,6 @@
 const choices = ["Rock", "Paper", "Scissors"];
 let playerScore = 0;
-let computerScore = 4;
+let computerScore = 0;
 const playerTotal = document.getElementById("playerTotal");
 const computerTotal = document.getElementById("computerTotal");
 const btns = document.querySelectorAll('.choices button');
@@ -104,7 +104,6 @@ function clearScores() {
     btns.forEach(button => {
         button.style.display = ""
     })
-    // document.body.classList.remove("computerWins")
 }
 
 
