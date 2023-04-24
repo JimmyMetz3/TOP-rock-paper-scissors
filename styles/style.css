@@ -1,3 +1,42 @@
-.choices button {
-    
+body {
+    display: flex;
+    flex-direction: column;
+
 }
+
+.choices{
+    display: flex;
+    justify-content: center;
+    gap: 50px ;
+}
+
+#header, #resultsDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#rock, #paper, #scissors {
+    border: none;
+    border-radius: 25px;
+    width: 250px;
+    height: 275px;
+}
+
+#rock {
+    background-image: url("/images/rock.jpg");
+}
+
+#paper {
+    background-image: url("/images/paper.jpg");
+}
+
+#scissors {
+    background-image: url("/images/scissors.jpg");
+}
+
+/* .computerWins {
+    background-image: url("/images/computerWins.jpg");
+} */
+

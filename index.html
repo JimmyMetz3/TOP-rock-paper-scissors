@@ -8,18 +8,22 @@
     <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
-    <h1>Rock Paper Scissors</h1>
-    <p>Make a choice to play. <br />First to 5 wins!</p>
+    <div id="header">
+      <h1><span class="auto-type"></span></h1>
+      <p>Make a choice to play. <br />First to 5 wins!</p>
+    </div>
     <div class="choices">
-      <button id="rock">Rock</button>
-      <button id="paper">Paper</button>
-      <button id="scissors">Scissors</button>
+      <button id="rock"></button>
+      <button id="paper"></button>
+      <button id="scissors"></button>
     </div>
     <div id="resultsDiv">
       <h2 id="results"></h2>
       <p id="playerTotal"></p>
       <p id="computerTotal"></p>
     </div>
+
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
     <script src="index.js"></script>
   </body>
 </html>

@@ -1,6 +1,6 @@
 const choices = ["Rock", "Paper", "Scissors"];
 let playerScore = 0;
-let computerScore = 0;
+let computerScore = 4;
 const playerTotal = document.getElementById("playerTotal");
 const computerTotal = document.getElementById("computerTotal");
 const btns = document.querySelectorAll('.choices button');
@@ -87,6 +87,7 @@ function determineWinner() {
             button.style.display = 'none'
         })
         resultsText.innerText = "";
+        document.body.classList.toggle("computerWins")
     }
 }
 
@@ -103,6 +104,7 @@ function clearScores() {
     btns.forEach(button => {
         button.style.display = ""
     })
+    // document.body.classList.remove("computerWins")
 }
 
 
@@ -119,6 +121,12 @@ for (i of btns) {
     })
 }
 
+let typed = new Typed(".auto-type", {
+    strings: ["Rock Paper Scissors"],
+    typeSpeed: 150,
+    loop: false,
+    showCursor: false
+})
 
 
 
